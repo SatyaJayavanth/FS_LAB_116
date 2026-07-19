@@ -1,0 +1,33 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient( to right,rgb(129, 134, 132) 30%, rgb(142, 189, 161) 70%); /*background color and to used to flow of colors*/
+}
+.header_class{
+    background-color: mediumseagreen;
+    padding: 15px;
+    box-shadow: 10px 5px rgba(148, 183, 146, 0.5);
+    border-radius: 20px;
+}
+.aside_class{
+     background-color: mediumseagreen;
+     border-radius: 20px;
+    transition: all 0.3s ease; /*smoooth transition for 0.3secs*/
+}
+.aside_class:hover{
+    background-color: darkseagreen;
+    cursor: pointer;
+    transform: scale(1.02); /*how much to blow out*/
+
+}
+.button_class{
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button_class:hover{
+    background-color: lightcoral;
+    transform: scale(1.1);
+}
