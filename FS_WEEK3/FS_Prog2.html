@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS</title>
+    <link rel="stylesheet" href="css2.css" target="">
+</head>
+
+<body>
+    <header>
+        <table class="header_class" width="100%">
+            <tr>
+                <td width="100%">
+                    <center>
+                        <h1>HealthMonAi</h1>
+                        <nav class="navg">
+                            <a href="#Home">Home</a>&nbsp;|&nbsp;
+                            <a href="#Chatbot">Chatbot</a>&nbsp;|&nbsp;
+                            <a href="#Application">Appointment</a>&nbsp;|&nbsp;
+                            <a href="#about">About Us</a>&nbsp;
+                        </nav>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <section class="sec_class" id="Chatbot">
+        <center>
+            <h1>AI Chatbot</h1>
+            <p>This chatbot helps you to clarify your doubts related to health</p>
+            <p><label for="chat"></label>
+                <textarea name="chatbot" id="chat" cols="70" rows="5"
+                    placeholder="ask your question here..." style="background-color: darkgrey; border-radius: 10px;"></textarea><br>
+                <input type="submit" value="Enter" class="button_class" >
+            </p>
+        </center>
+    </section>
+    <hr>
+    <table width="100%" border="0" cellspacing="10" cellpadding="0">
+        <tr>
+            <td width="30%">
+                <aside class="aside_class" id="about">
+                    <h1>About Us</h1>
+                    <ol>
+                        <li>It is most usefull app used now a days</li>
+                        <li>Health is the most preffered case by all</li>
+                        <li>Now we have integrated healh with Ai</li>
+                        <li>We do have a specific chatbot for it</li>
+                    </ol>
+                    <img src="health_img.jpg" alt="health ai" width="200" height="200" style="border-radius: 10px;" >
+                </aside>
+            </td>
+            <td width="70%">
+                <article class="article_class">
+                    <center>
+                        <h1>Hospital</h1>
+                    </center>
+                    <form class="form_class" id="Application" action="#" method="">
+                        <fieldset>
+                            <legend>Appointment Form</legend>
+                            <p>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="patient name" required
+                                    placeholder="enter patients name..">
+                            </p>
+                            <p>
+                                <label for="phn">Phone:</label>
+                                <input type="number" name="phn number" id="phn" required>
+                            </p>
+                            <p>
+                                <label for="gender">Gender:</label><br>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label><br>
+
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label><br>
+
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+
+                            </p>
+                            <p>
+                                <label for="location">Location:</label>
+                                <select name="adress" id="location">
+                                    <option value="Vizag">Vizag</option>
+                                    <option value="Hyd">Hyd</option>
+                                    <option value="bangl">Bannglore</option>
+                                    <option value="chenn">Chennai</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="textbox">Problem:</label>
+                                <textarea name="textb" id="textbox" placeholder="type your problem here...."></textarea>
+                            </p>
+                            <button type="submit" class="button_class">Submit</button>
+                        </fieldset>
+                    </form>
+            </td>
+            </article>
+        </tr>
+    </table>
+    <hr>
+    <footer class="footer_class">
+        <center>
+            <h1>Thank you for using this</h1>
+    </footer>
+    </center>
+</body>
+
+</html>
