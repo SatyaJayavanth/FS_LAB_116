@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Styled Webpage</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgb(167, 192, 205) 30%, rgb(169, 189, 142) 70%);
+            font-family: Arial, Helvetica, sans-serif;
+                
+        }
+        header{
+            background-color: cadetblue;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow:5px 5px 10px gray;
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(126, 178, 195);
+            padding: 20px;
+            margin: 5px;
+            border-radius: 10px;
+            text-align: center;
+            
+        }
+        nav a{
+            background-color: aquamarine;
+            color: black;
+            padding: 7px;
+            margin: 20px ;
+            text-decoration: solid;
+            border-radius: 15px;
+        }
+        nav a:hover{
+            background-color: rgb(164, 255, 225);
+        }
+        .threecards{
+            display:flex;
+            justify-content:space-around;
+        }
+        .card h1{
+            color: rgb(85, 2, 93);
+        }
+        .card{
+            width:28%;
+            background: azure;
+            border-radius:10px;
+            padding:20px;
+            margin:10px;
+            box-shadow:5px 5px 10px gray;
+            text-align:center;
+        }
+        .card button{
+            background-color: aquamarine;
+            color: black;
+            padding: 7px;
+            text-decoration: solid;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .card button:hover{
+            background-color: rgb(164, 255, 225);
+            transform: scale(1.05);
+        }
+        canvas{
+            display: block;
+            margin:20px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Part B-->
+    <header>
+        <h1>Styled Web Page</h1>
+        <p>A style page using html and css</p>
+    </header>
+    <hr>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cards">Cards</a>
+        <a href="#canvas">Canvas</a>
+    </nav>
+    <hr>
+    <!--Part B cont-->
+    <div class="threecards" id="cards">
+        <div class="card">
+            <h1>Card1</h1>
+            <p>Hello Welcome</p>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="card">
+            <h1>Card2</h1>
+            <p>You are beautiful</p>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="card">
+            <h1>Card3</h1>
+            <p>Welcome to Jays Web</p>
+            <button type="submit">Submit</button>
+        </div>
+
+    </div>
+    <hr>
+    <!--Part A-->
+    <h1 align="center" style="color: indigo;">Canvas</h1>
+    <canvas id="newcanvas" width="500" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById("newcanvas");
+        const can = canvas.getContext("2d");
+
+        // Rectangle
+        can.fillStyle = "green";
+        can.fillRect(20, 20, 120, 80);
+
+        // Circle
+        can.beginPath();
+        can.arc(250, 60, 40, 0, 2 * Math.PI);
+        can.fillStyle = "orange";
+        can.fill();
+
+        // Line
+        can.beginPath();
+        can.moveTo(20, 150);
+        can.lineTo(250, 150);
+        can.strokeStyle = "red";
+        can.lineWidth = 3;
+        can.stroke();
+
+        // Text
+        can.font = "24px Arial";
+        can.fillStyle = "black";
+        can.fillText("MY Web", 20, 230);
+    </script>
+    <hr>
+    <footer>
+        <p>&copy; 2026 Anits College Info Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
